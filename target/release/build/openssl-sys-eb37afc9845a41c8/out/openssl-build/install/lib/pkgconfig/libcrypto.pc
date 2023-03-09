@@ -1,0 +1,12 @@
+prefix=/home/anand/Desktop/dev_space/Test/aws/ec2_file_upload/target/release/build/openssl-sys-eb37afc9845a41c8/out/openssl-build/install
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+enginesdir=${libdir}/engines-1.1
+
+Name: OpenSSL-libcrypto
+Description: OpenSSL cryptography library
+Version: 1.1.1t
+Libs: -L${libdir} -lcrypto
+Libs.private: -ldl -pthread 
+Cflags: -I${includedir}
